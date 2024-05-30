@@ -1,0 +1,41 @@
+.carousel-container {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.slick-slide {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.slick-list {
+    overflow: hidden;
+}
+
+.slick-track {
+    display: flex;
+}
+
+.logo-image {
+    width: 100px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo-image:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .logo-image {
+        width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-image {
+        width: 60px;
+    }
+}

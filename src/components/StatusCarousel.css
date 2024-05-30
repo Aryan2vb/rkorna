@@ -1,0 +1,27 @@
+.status-carousel {
+    margin: 20px auto;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;  /* Ensure no overflow issues */
+}
+
+.slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #000;
+}
+
+.slick-dots {
+    bottom: -25px;
+}
+
+@media (max-width: 768px) {
+    .status-carousel .slick-slide {
+        width: 100px !important;
+    }
+}

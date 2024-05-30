@@ -1,0 +1,36 @@
+.status-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.status-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.status-icon:hover {
+    transform: scale(1.1);
+}
+
+.status-title {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .status-icon {
+        width: 60px;
+        height: 60px;
+    }
+}
